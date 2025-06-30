@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ver Código HTML</title>
+    <style>
+        #codigo {
+            display: none;
+            margin-top: 20px;
+            background: #f3f3f3;
+            border: 1px solid #ccc;
+            padding: 16px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mostrarCodigo()">Ver el código HTML</button>
+    <div id="codigo"></div>
+
+    <script>
+        // Pega aquí el código HTML que hiciste antes entre las comillas invertidas
+        const code = `
+<!-- Aquí va tu código HTML anterior -->
+<p>Ejemplo de código HTML previo</p>
+`;
+
+        function mostrarCodigo() {
+            const codigoDiv = document.getElementById('codigo');
+            codigoDiv.textContent = code;
+            codigoDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
